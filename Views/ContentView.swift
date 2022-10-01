@@ -27,7 +27,7 @@ struct ContentView: View {
 
     }
 }
-
+}
 struct InstructionsView: View {
     @Binding var game: Game
     var body: some View {
@@ -92,7 +92,7 @@ struct HitMeButton: View {
     }
         
     }
-}
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
