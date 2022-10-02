@@ -9,18 +9,25 @@ import SwiftUI
 
 struct PointsView: View {
     
-    @State private var alertIsVisible = false
-    @State private var sliderValue = 50.0
-    @State private var game = Game()
+    @Binding var alertIsVisible: Bool
+    @Binding var sliderValue: Double
+    @Binding var game: Game
     
     
     var body: some View {
+        let roundedValue = Int(sliderValue.rounded())
+        let points = game.points(sliderValue: roundedValue)
         VStack(spacing: 10) {
             InstructionText(text: "The slider's value is")
         
-        BigNumberText(text: "89")
-        BodyText(text: "You scored 200 Points \n💗💗💗")
-        Button(action: {}) {
+        BigNumberText(text: String(roundedValue))
+        BodyText(text: "You scored \(points) Points \n💗💗💗")
+        Button(action: {
+            withAnimation {
+            alertIsVisible = false
+            }
+            game.startNewRound(points: points)
+        }) {
             ButtonText(text: "Start new round")
         }
         }
@@ -29,22 +36,24 @@ struct PointsView: View {
             .foregroundColor(Color("Backgroundcolor"))
             .cornerRadius(21.0)
             .shadow(radius: 10, x: 5, y: 5)
+            .transition(.scale)
     
     }
 }
 
 struct PointsView_Previews: PreviewProvider {
+    
     static private var alertIsVisible = Binding.constant(false)
-    static private var sliderValue = Binding.constant(50.0)
+    static private var slidervalue = Binding.constant(50.0)
     static private var game = Binding.constant(Game())
    
     static var previews: some View {
-        PointsView()
-        PointsView()
+        PointsView(alertIsVisible: alertIsVisible, sliderValue: slidervalue, game: game)
+        PointsView(alertIsVisible: alertIsVisible, sliderValue:slidervalue, game: game)
             .previewLayout(.fixed(width: 568, height: 320))
         ContentView()
             .preferredColorScheme(.dark)
-        PointsView()
+        PointsView(alertIsVisible: alertIsVisible, sliderValue: slidervalue, game: game)
             .preferredColorScheme(.dark)
 
             .previewLayout(.fixed(width: 568, height: 320))
