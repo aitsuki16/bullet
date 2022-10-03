@@ -19,8 +19,15 @@ struct RowView: View {
     let date: Date
     var body: some View {
         HStack {
-        Slider(value: .constant(50.0))
-            .padding()
+    RoundedTextView(text: String(index))
+            Spacer()
+            ScoreText(score: score)
+                .frame(width: Constant.Leaderboard.leaderboardScoreColWidth)
+            Spacer()
+            DateText(date: date)
+                .frame(width: Constant.Leaderboard.leaderboardDateColWidth)
+            
+        
         }
         
         .background(

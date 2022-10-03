@@ -64,6 +64,14 @@ struct RoundedTextView: View {
     
     var body: some View {
         Text(text)
+        
+            .font(.title)
+            .foregroundColor(Color("TextColor"))
+            .frame(width: Constant.General.roundedViewLenght, height: Constant.General.roundedViewLenght)
+            .overlay(
+                Circle()
+                    .strokeBorder(Color("LeaderboardRowColor"),
+                                  lineWidth: Constant.General.strokeWidth))
     }
 }
 struct PreviewView: View {
