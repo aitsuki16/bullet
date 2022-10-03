@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE30A77B28EA79FD00337AD1 /* LeaderBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE30A77A28EA79FD00337AD1 /* LeaderBoardView.swift */; };
 		CE84829728DAFBC1009214BC /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84829628DAFBC1009214BC /* Shapes.swift */; };
 		CE84829928DB2BD7009214BC /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84829828DB2BD7009214BC /* RoundedViews.swift */; };
 		CE84829B28DF445F009214BC /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84829A28DF445F009214BC /* BackgroundView.swift */; };
 		CE84829D28E7EE54009214BC /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84829C28E7EE54009214BC /* PointsView.swift */; };
-		CE8482A128E83566009214BC /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8482A028E83566009214BC /* Models.swift */; };
+		CE8482A128E83566009214BC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8482A028E83566009214BC /* Constants.swift */; };
 		CE939B1D28DAB3A100F4D665 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE939B1C28DAB3A100F4D665 /* TextViews.swift */; };
 		CEF75E9228C5DC4D00A35475 /* bulleyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF75E9128C5DC4D00A35475 /* bulleyeApp.swift */; };
 		CEF75E9428C5DC4D00A35475 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF75E9328C5DC4D00A35475 /* ContentView.swift */; };
@@ -41,11 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE30A77A28EA79FD00337AD1 /* LeaderBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardView.swift; sourceTree = "<group>"; };
 		CE84829628DAFBC1009214BC /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		CE84829828DB2BD7009214BC /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		CE84829A28DF445F009214BC /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		CE84829C28E7EE54009214BC /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
-		CE8482A028E83566009214BC /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		CE8482A028E83566009214BC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE939B1C28DAB3A100F4D665 /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
 		CEF75E8E28C5DC4D00A35475 /* bulleye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bulleye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF75E9128C5DC4D00A35475 /* bulleyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bulleyeApp.swift; sourceTree = "<group>"; };
@@ -158,7 +160,8 @@
 				CE84829828DB2BD7009214BC /* RoundedViews.swift */,
 				CE84829A28DF445F009214BC /* BackgroundView.swift */,
 				CE84829C28E7EE54009214BC /* PointsView.swift */,
-				CE8482A028E83566009214BC /* Models.swift */,
+				CE8482A028E83566009214BC /* Constants.swift */,
+				CE30A77A28EA79FD00337AD1 /* LeaderBoardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -306,9 +309,10 @@
 				CEF75E9428C5DC4D00A35475 /* ContentView.swift in Sources */,
 				CE939B1D28DAB3A100F4D665 /* TextViews.swift in Sources */,
 				CE84829D28E7EE54009214BC /* PointsView.swift in Sources */,
+				CE30A77B28EA79FD00337AD1 /* LeaderBoardView.swift in Sources */,
 				CE84829B28DF445F009214BC /* BackgroundView.swift in Sources */,
 				CE84829728DAFBC1009214BC /* Shapes.swift in Sources */,
-				CE8482A128E83566009214BC /* Models.swift in Sources */,
+				CE8482A128E83566009214BC /* Constants.swift in Sources */,
 				CEF75EBF28CB703800A35475 /* Game.swift in Sources */,
 				CEF75E9228C5DC4D00A35475 /* bulleyeApp.swift in Sources */,
 			);
